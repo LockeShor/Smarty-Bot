@@ -1,4 +1,4 @@
-set name=commitname.txt
+set name=commit name here
 git add .
-git commit -am %name%
+git commit -am "%name%"
 git push origin main
