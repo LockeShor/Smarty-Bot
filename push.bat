@@ -1,3 +1,4 @@
+set name=commitname.txt
 git add .
-git commit -am "Im done naming commits"
+git commit -am name
 git push origin main
