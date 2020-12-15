@@ -12,3 +12,5 @@ s!kick [user] - kick a user from the server
 s!ban [user] - ban a user from the server
 s!clear [amount] - deletes a specified amount of messages
 ---------------------------------------------------------------------------
+ONE TIME COMMANDS:
+s!reactionrole - sends a message which can be reacted to for roles
