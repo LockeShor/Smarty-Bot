@@ -8,8 +8,8 @@ module.exports = {
         const minecraft = message.guild.roles.cache.find(role => role.name === "Minecrafters");
         const amongUs = message.guild.roles.cache.find(role => role.name === "Among Us");
 
-        const minecraftEmoji = '🟫';
-        const amongUsEmoji = '🔴';
+        const minecraftEmoji = client.emojis.cache.get("788407942490882048");
+        const amongUsEmoji = client.emojis.cache.get("788407780729290803");
 
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')

@@ -55,7 +55,8 @@ client.on('message', message =>{
         client.commands.get('clear').execute(message, args, client);
     } else if (command == 'reactionrole'){
         client.commands.get('reactionrole').execute(message, args, Discord, client);
-    }
-});
+    } else if (command == 'bettermute'){
+        client.commands.get('bettermute').run(message, args, client);
+}});
 
 client.login(config.token);
