@@ -2,7 +2,7 @@ const { ReactionCollector } = require("discord.js");
 
 module.exports = {
     name: 'reactionrole',
-    description: "sets up a reaction role message!",
+    description: "Sets up a reaction role message!",
     async execute(message, _args, Discord, client) {
         const channel = '788235574611410984';
         const minecraft = message.guild.roles.cache.find(role => role.name === "Minecrafters");
@@ -14,9 +14,9 @@ module.exports = {
         let embed = new Discord.MessageEmbed()
             .setColor('#e42643')
             .setTitle('Select a role!')
-            .setDescription('Select a role to decide what games you like to play!\n\n' +
-                `${minecraftEmoji} for Minecraft.\n` +
-                `${amongUsEmoji} for Among Us.`);
+            .setDescription(`Select a role to decide what games you like to play!\n\n
+                ${minecraftEmoji} for Minecraft.\n
+                ${amongUsEmoji} for Among Us.`);
 
         let messageEmbed = await message.channel.send(embed);
         messageEmbed.react(minecraftEmoji);
